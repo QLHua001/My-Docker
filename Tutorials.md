@@ -110,3 +110,29 @@
 
   > docker container prune
 
+
+
+# 访问仓库
+
+1. ## **==自动构建==**
+
+   自动构建（`Automated Builds`）功能对于需要经常升级镜像内程序来说，十分方便。
+
+   有时候，用户构建了镜像，安装了某个软件，当软件发布新版本则需要手动更新镜像。
+
+   而自动构建允许用户通过 Docker Hub 指定跟踪一个目标网站（支持 [GitHub](https://github.com/) 或 [BitBucket](https://bitbucket.org/)）上的项目，一旦项目发生新的提交 （`commit`）或者创建了新的标签（`tag`），Docker Hub 会自动构建镜像并推送到 Docker Hub 中。
+
+   要配置自动构建，包括如下的步骤：
+
+   - 登录 Docker Hub；
+   - 在 Docker Hub 点击右上角头像，在账号设置（`Account Settings`）中关联（`Linked Accounts`）目标网站；
+   - 在 Docker Hub 中新建或选择已有的仓库，在 `Builds` 选项卡中选择 `Configure Automated Builds`；
+   - 选取一个目标网站中的项目（需要含 `Dockerfile`）和分支；
+   - 指定 `Dockerfile` 的位置，并保存。
+
+   之后，可以在 Docker Hub 的仓库页面的 `Timeline` 选项卡中查看每次构建的状态。
+
+2. 私有仓库
+
+   
+
