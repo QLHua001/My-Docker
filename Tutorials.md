@@ -28,6 +28,7 @@
 
 国内也有一些云服务商提供类似于 Docker Hub 的公开服务。比如 [网易云镜像服务](https://c.163.com/hub#/m/library/)、[DaoCloud 镜像市场](https://hub.daocloud.io/)、[阿里云镜像库](https://www.aliyun.com/product/acr?source=5176.11533457&userCode=8lx5zmtu) 等。
 
+
 # 镜像
 
 **镜像 ID** 则是镜像的唯一标识，一个镜像可以对应多个 **标签**。
@@ -133,6 +134,4 @@
    之后，可以在 Docker Hub 的仓库页面的 `Timeline` 选项卡中查看每次构建的状态。
 
 2. 私有仓库
-
-   
 
